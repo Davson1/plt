@@ -134,16 +134,16 @@
         <dia:point val="6.9,4.95"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="6.85,4.9;14.38,9.2"/>
+        <dia:rectangle val="6.85,4.9;15.15,10"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="6.9,4.95"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
-        <dia:real val="7.4299999999999997"/>
+        <dia:real val="8.1999999999999993"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="4.2000000000000002"/>
+        <dia:real val="5"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#Exemple#</dia:string>
@@ -268,6 +268,29 @@
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>#0#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="visibility">
+            <dia:enum val="0"/>
+          </dia:attribute>
+          <dia:attribute name="abstract">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="class_scope">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+        </dia:composite>
+        <dia:composite type="umlattribute">
+          <dia:attribute name="name">
+            <dia:string>#tttst#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#float#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="value">
+            <dia:string>#3.33#</dia:string>
           </dia:attribute>
           <dia:attribute name="comment">
             <dia:string>##</dia:string>
