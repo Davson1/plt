@@ -1,9 +1,15 @@
-/*#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
+#include <iostream>
 #include "Window.h"
 
 
 
-void start (Sprite sprite)
+void start ()
 {
 
-}*/
+}
+
+void refresh ()
+{
+
+}
