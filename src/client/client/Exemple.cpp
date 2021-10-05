@@ -1,7 +1,6 @@
 #include <state/Exemple.h>  // Included from library shared_static
 #include "Exemple.h"
-
-namespace client {
+/*namespace client {
 
 void Exemple::setX (int x) {
     // Create an object from "shared" library
@@ -11,5 +10,4 @@ void Exemple::setX (int x) {
     this->x = x;
 }
 
-}
-
+}*/
