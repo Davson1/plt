@@ -4,9 +4,6 @@
     <dia:attribute name="background">
       <dia:color val="#ffffffff"/>
     </dia:attribute>
-    <dia:attribute name="pagebreak">
-      <dia:color val="#000099ff"/>
-    </dia:attribute>
     <dia:attribute name="paper">
       <dia:composite type="paper">
         <dia:attribute name="name">
@@ -32,54 +29,6 @@
         </dia:attribute>
         <dia:attribute name="fitto">
           <dia:boolean val="false"/>
-        </dia:attribute>
-      </dia:composite>
-    </dia:attribute>
-    <dia:attribute name="grid">
-      <dia:composite type="grid">
-        <dia:attribute name="dynamic">
-          <dia:boolean val="true"/>
-        </dia:attribute>
-        <dia:attribute name="width_x">
-          <dia:real val="1"/>
-        </dia:attribute>
-        <dia:attribute name="width_y">
-          <dia:real val="1"/>
-        </dia:attribute>
-        <dia:attribute name="visible_x">
-          <dia:int val="1"/>
-        </dia:attribute>
-        <dia:attribute name="visible_y">
-          <dia:int val="1"/>
-        </dia:attribute>
-        <dia:composite type="color"/>
-      </dia:composite>
-    </dia:attribute>
-    <dia:attribute name="color">
-      <dia:color val="#d8e5e5ff"/>
-    </dia:attribute>
-    <dia:attribute name="guides">
-      <dia:composite type="guides">
-        <dia:attribute name="hguides"/>
-        <dia:attribute name="vguides"/>
-      </dia:composite>
-    </dia:attribute>
-    <dia:attribute name="display">
-      <dia:composite type="display">
-        <dia:attribute name="antialiased">
-          <dia:boolean val="false"/>
-        </dia:attribute>
-        <dia:attribute name="snap-to-grid">
-          <dia:boolean val="false"/>
-        </dia:attribute>
-        <dia:attribute name="snap-to-object">
-          <dia:boolean val="true"/>
-        </dia:attribute>
-        <dia:attribute name="show-grid">
-          <dia:boolean val="true"/>
-        </dia:attribute>
-        <dia:attribute name="show-connection-points">
-          <dia:boolean val="true"/>
         </dia:attribute>
       </dia:composite>
     </dia:attribute>
@@ -146,7 +95,7 @@
         <dia:real val="8.1999999999999993"/>
       </dia:attribute>
       <dia:attribute name="name">
-        <dia:string>#Scene#</dia:string>
+        <dia:string>#Graphics#</dia:string>
       </dia:attribute>
       <dia:attribute name="stereotype">
         <dia:string>##</dia:string>
