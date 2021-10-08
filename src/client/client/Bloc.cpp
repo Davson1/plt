@@ -25,9 +25,10 @@ namespace client {
   {
     sf::Texture oneBlocTexture;
     sf::Sprite oneBloc;
-    oneBlocTexture.loadFromFile("../res/tile_0022.png");
+    oneBlocTexture.loadFromFile(this->imagePath);
     oneBloc.setTexture(oneBlocTexture);
     oneBloc.setPosition(x,y);
+    //this->draw(oneBloc);
   }
 
 }

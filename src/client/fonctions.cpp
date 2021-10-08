@@ -1,6 +1,6 @@
 #include "fonctions.h"
 
-int globalMap[300] = {
+int globalMap[GRID_WIDTH*GRID_HEIGHT] = {
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -17,7 +17,7 @@ int globalMap[300] = {
 5,5,5,5,5,5,5,6,2,2,2,2,4,5,5,5,5,5,5,5,
 5,5,5,5,5,5,5,6,1,1,1,1,4,5,5,5,5,5,5,5};
 
-sf::RenderWindow scene(sf::VideoMode(800, 480), "Tanks Battle !");
+sf::RenderWindow scene(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Tanks Battle !");
 sf::Texture backgroundTexture;
 sf::Sprite background;
 sf::Event event;
@@ -41,9 +41,12 @@ void refresh(void)
 
 
     b.setSprite(4);
-    b.drawSprite(200,200);
-    //scene.draw(b);
-    //b.drawSprite((i*32)%20,floor((i*32)/20));
+    b.oneBlocTexture.loadFromFile("../res/tile_0023.png");
+    b.oneBloc.setTexture(b.oneBlocTexture);
+    b.oneBloc.setPosition(100,200);
+    b.oneBloc.setScale(2,2);
+    scene.draw(b.oneBloc);
+
 
     scene.display();
   }
