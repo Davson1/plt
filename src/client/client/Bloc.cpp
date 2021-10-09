@@ -4,31 +4,32 @@
 
 namespace client {
 
-  void Bloc::setSprite (int sprite)
+  void Bloc::setBloc (int b) //convertit un indice du tableau de la map en un sprite affichable à l'écran
   {
-    switch(sprite)
+    switch(b)
     {
-      case 1 : this->imagePath = "../res/tile_0073.png";
-      case 2 : this->imagePath = "../res/tile_0033.png";
-      case 3 : this->imagePath = "../res/tile_0021.png";
-      case 4 : this->imagePath = "../res/tile_0121.png";
-      case 5 : this->imagePath = "../res/tile_0122.png";
-      case 6 : this->imagePath = "../res/tile_0123.png";
-      case 7 : this->imagePath = "../res/tile_0021.png";
-      case 8 : this->imagePath = "../res/tile_0022.png";
-      case 9 : this->imagePath = "../res/tile_0023.png";
-      default : this->imagePath = "";
+      case 1 : this->imagePath = "../res/tile_0073.png";  break;
+      case 2 : this->imagePath = "../res/tile_0033.png";  break;
+      case 4 : this->imagePath = "../res/tile_0121.png";  break;
+      case 5 : this->imagePath = "../res/tile_0122.png";  break;
+      case 6 : this->imagePath = "../res/tile_0123.png";  break;
+      case 7 : this->imagePath = "../res/tile_0021.png";  break;
+      case 8 : this->imagePath = "../res/tile_0022.png";  break;
+      case 9 : this->imagePath = "../res/tile_0023.png";  break;
+      default : break;
+    }
+    if (this->imagePath != "")
+    {
+      this->oneBlocTexture.loadFromFile(this->imagePath);
+      this->oneBloc.setTexture(this->oneBlocTexture);
+      this->oneBloc.setScale(2,2);
     }
   }
 
-  void Bloc::drawSprite (int x, int y)
+  void Bloc::drawBloc (sf::RenderWindow &s, int x, int y)
   {
-    sf::Texture oneBlocTexture;
-    sf::Sprite oneBloc;
-    oneBlocTexture.loadFromFile(this->imagePath);
-    oneBloc.setTexture(oneBlocTexture);
-    oneBloc.setPosition(x,y);
-    //this->draw(oneBloc);
+    this->oneBloc.setPosition(x,y);
+    s.draw(this->oneBloc);
   }
 
 }
