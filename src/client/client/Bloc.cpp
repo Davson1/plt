@@ -1,6 +1,6 @@
 #include "Bloc.h"
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
+#include "fonctions.h"
+#include <math.h>
 
 namespace client {
 
@@ -16,6 +16,9 @@ namespace client {
       case 7 : this->imagePath = "../res/tile_0021.png";  break;
       case 8 : this->imagePath = "../res/tile_0022.png";  break;
       case 9 : this->imagePath = "../res/tile_0023.png";  break;
+      case 10 : this->imagePath = "../res/tile_0153.png";  break;
+      case 11 : this->imagePath = "../res/tile_0154.png";  break;
+      case 12 : this->imagePath = "../res/tile_0155.png";  break;
       default : break;
     }
     if (this->imagePath != "")
@@ -26,9 +29,9 @@ namespace client {
     }
   }
 
-  void Bloc::drawBloc (sf::RenderWindow &s, int x, int y)
+  void Bloc::drawBloc (sf::RenderWindow &s, int i)
   {
-    this->oneBloc.setPosition(x,y);
+    this->oneBloc.setPosition((BLOC_SIZE*i)%(BLOC_SIZE*GRID_WIDTH),floor(i/GRID_WIDTH)*BLOC_SIZE);
     s.draw(this->oneBloc);
   }
 
