@@ -4,9 +4,6 @@
     <dia:attribute name="background">
       <dia:color val="#ffffffff"/>
     </dia:attribute>
-    <dia:attribute name="pagebreak">
-      <dia:color val="#000099ff"/>
-    </dia:attribute>
     <dia:attribute name="paper">
       <dia:composite type="paper">
         <dia:attribute name="name">
@@ -32,54 +29,6 @@
         </dia:attribute>
         <dia:attribute name="fitto">
           <dia:boolean val="false"/>
-        </dia:attribute>
-      </dia:composite>
-    </dia:attribute>
-    <dia:attribute name="grid">
-      <dia:composite type="grid">
-        <dia:attribute name="dynamic">
-          <dia:boolean val="true"/>
-        </dia:attribute>
-        <dia:attribute name="width_x">
-          <dia:real val="1"/>
-        </dia:attribute>
-        <dia:attribute name="width_y">
-          <dia:real val="1"/>
-        </dia:attribute>
-        <dia:attribute name="visible_x">
-          <dia:int val="1"/>
-        </dia:attribute>
-        <dia:attribute name="visible_y">
-          <dia:int val="1"/>
-        </dia:attribute>
-        <dia:composite type="color"/>
-      </dia:composite>
-    </dia:attribute>
-    <dia:attribute name="color">
-      <dia:color val="#d8e5e5ff"/>
-    </dia:attribute>
-    <dia:attribute name="guides">
-      <dia:composite type="guides">
-        <dia:attribute name="hguides"/>
-        <dia:attribute name="vguides"/>
-      </dia:composite>
-    </dia:attribute>
-    <dia:attribute name="display">
-      <dia:composite type="display">
-        <dia:attribute name="antialiased">
-          <dia:boolean val="false"/>
-        </dia:attribute>
-        <dia:attribute name="snap-to-grid">
-          <dia:boolean val="false"/>
-        </dia:attribute>
-        <dia:attribute name="snap-to-object">
-          <dia:boolean val="true"/>
-        </dia:attribute>
-        <dia:attribute name="show-grid">
-          <dia:boolean val="true"/>
-        </dia:attribute>
-        <dia:attribute name="show-connection-points">
-          <dia:boolean val="true"/>
         </dia:attribute>
       </dia:composite>
     </dia:attribute>
@@ -2027,7 +1976,6 @@
         <dia:connection handle="0" to="O10" connection="3"/>
         <dia:connection handle="1" to="O2" connection="9"/>
       </dia:connections>
-      <dia:childnode parent="O0"/>
     </dia:object>
     <dia:object type="UML - Generalization" version="1" id="O13">
       <dia:attribute name="obj_pos">
@@ -2078,7 +2026,6 @@
         <dia:connection handle="0" to="O11" connection="3"/>
         <dia:connection handle="1" to="O2" connection="17"/>
       </dia:connections>
-      <dia:childnode parent="O0"/>
     </dia:object>
     <dia:object type="UML - Component Feature" version="1" id="O14">
       <dia:attribute name="obj_pos">
@@ -2142,7 +2089,6 @@
         <dia:connection handle="0" to="O3" connection="6"/>
         <dia:connection handle="1" to="O2" connection="28"/>
       </dia:connections>
-      <dia:childnode parent="O0"/>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O15">
       <dia:attribute name="obj_pos">
@@ -2403,7 +2349,6 @@
         <dia:connection handle="0" to="O2" connection="14"/>
         <dia:connection handle="1" to="O15" connection="4"/>
       </dia:connections>
-      <dia:childnode parent="O0"/>
     </dia:object>
     <dia:object type="UML - Component Feature" version="1" id="O17">
       <dia:attribute name="obj_pos">
@@ -2467,7 +2412,6 @@
         <dia:connection handle="0" to="O1" connection="6"/>
         <dia:connection handle="1" to="O3" connection="1"/>
       </dia:connections>
-      <dia:childnode parent="O0"/>
     </dia:object>
   </dia:layer>
 </dia:diagram>
