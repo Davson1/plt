@@ -1,24 +1,23 @@
 #include "Bloc.h"
-#include "fonctions.h"
-
+#include "functions.h"
 
 namespace client {
 
-  void Map::setMap (int* m)
+  Map::Map (int* m)
   {
     int i;
-    for(i=0;i<GRID_WIDTH*GRID_HEIGHT;i++)
+    for(i=0;i<MAP_SIZE;i++)
     {
-      this->b[i].setBloc(m[i]);
+      this->bloc[i].setBloc(m[i]);
     }
   }
 
   void Map::drawMap (sf::RenderWindow &s)
   {
     int i;
-    for(i=0;i<GRID_WIDTH*GRID_HEIGHT;i++)
+    for(i=0;i<MAP_SIZE;i++)
     {
-      this->b[i].drawBloc(s,i);
+      this->bloc[i].drawBloc(s,i);
     }
   }
 
